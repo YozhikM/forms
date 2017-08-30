@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Анкета</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="pure-g">
+            <div class="pure-u-1">
+                <form class="info">
+                    <h1>Анкета</h1>
+                    <a name="info"></a>
+                    <img src="img/personal-info.png">
+                    <h2>Личная информация</h2>
+                    <input type="text" name="fullName" required>
+                    <label class="fullname" for="fullName">ФИО</label>
+                    <div class="select">
+                    <h3>Год рождения</h3><img src="img/arrow-down.png"></div>
+                    <div class="options">
+                        <a>1998</a>
+                        <a>1997</a>
+                        <a>1996</a>
+                        <a>1995</a>
+                        <a>1994</a>
+                        <a>1993</a>
+                        <a>1992</a>
+                        <a>1991</a>
+                        <a>1990</a>
+                        <a>1989</a>
+                        <a>1988</a>
+                        <a>1987</a>
+                        <a>1986</a>
+                        <a>1985</a>
+                        <a>1984</a>
+                        <a>1983</a>
+                        <a>1982</a>
+                        <a>1981</a>
+                        <a>1980</a>
+                        <a>1979</a>
+                        <a>1978</a>
+                        <a>1977</a>
+                        <a>1976</a>
+                        <a>1975</a>
+                        <a>1974</a>
+                        <a>1973</a>
+                        <a>1972</a>
+                    </div>
+                    <input type="text" name="city" required>
+                    <label class="city" for="city">Место проживания</label>
+                    <input type="text" name="skype" required>
+                    <label class="skype" for="skype">Skype</label>
+                    <input type="email" name="email" required>
+                    <label class="email" for="email">E-mail</label>
+                </form>
+            </div>
+            <div class="pure-u-1">
+                <form class="experience">
+                    <a name="xp"></a>
+                    <img src="img/experience.png">
+                    <h2>Расскажите о своем опыте</h2>
+                    <div class="checkbox-wrapper">
+                        <div class="checkbox">
+                            <input type="checkbox" id="bem">
+                            <label for="bem"><span></span></label>
+                            <p>БЭМ/OOCSS</p>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="semant">
+                            <label for="semant"><span></span></label>
+                            <p>Верстаю семантично</p>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="webpack">
+                            <label for="webpack"><span></span></label>
+                            <p>Webpack</p>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="prepro">
+                            <label for="prepro"><span></span></label>
+                            <p>Stylus/LESS/SASS</p>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="es">
+                            <label for="es"><span></span></label>
+                            <p>ES2015/ES2016</p>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="jq">
+                            <label for="jq"><span></span></label>
+                            <p>jQuery</p>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="svg">
+                            <label for="svg"><span></span></label>
+                            <p>Работаю с SVG</p>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="gulp">
+                            <label for="gulp"><span></span></label>
+                            <p>Gulp/Grunt</p>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="git">
+                            <label for="git"><span></span></label>
+                            <p>Использую Git</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="pure-u-1">
+                <form class="js">
+                    <a name="js"></a>
+                    <img src="img/js.png">
+                    <h2>Уровень владения JavaScript</h2>
+                    <div class="inputRange">
+                        <div class="text">Не владею</div>
+                        <div class="text">Использую готовые решения</div>
+                        <div class="text">Использую готовые решения и умею переделывать</div>
+                        <div class="text">Пишу сложный js с нуля</div>
+                        <div class="bar">
+                            <div class="dis"></div>
+                        </div>
+                        <div class="pointer"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="pure-u-1">
+                <form class="about">
+                    <a name="about"></a>
+                    <img src="img/about.png">
+                    <h2>Расскажите о себе</h2>
+                    <h3>Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.
+                    </h3>
+                    <textarea placeholder="Понравилась тем, что..."></textarea>
+                    <div class="button"><a href="#">Готово</a></div>
+                </form>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script type="text/javascript" src="js/jq-ui.slider.js"></script>
+        <script type="text/javascript" src="js/jq.js"></script>
+        <script type="text/javascript" src="js/select.js"></script>
+    </body>
+</html>
